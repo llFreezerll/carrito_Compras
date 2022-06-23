@@ -1,0 +1,60 @@
+
+#header{
+    background-color: rgb(32, 30, 30) !important; 
+    ;
+}
+#nav{
+    z-index: 100;
+}
+#nav_a{
+    color: rgb(26, 57, 196) !important;
+}
+#nav_carrito{
+    float: right;
+    color: rgb(26, 57, 196) ;
+}
+body{
+    background-color: rgb(205, 205, 226);
+}
+#fondo_card{
+    background-color:rgb(32, 30, 30) ;
+}
+.carrito{
+    min-height: 80vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+.table__productos{
+    display: flex;
+}
+.table__productos > img{
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+
+}
+.table__cantidad > input{
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+.total{
+    color: rgb(182, 166, 26);
+}
+#footer{
+    background-color: rgb(32, 30, 30);
+    color: rgb(26, 57, 196);
+}
+#lyrics{
+    
+    color: aliceblue;
+}
+#lyrics_precio{
+    color: rgb(182, 166, 26);
+}
