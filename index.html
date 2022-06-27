@@ -22,7 +22,7 @@
 
 <body>
    <!-- header -->
-   <nav id="nav" class="navbar navbar-expand-lg bg-dark pb-4 pt-4">
+   <nav id="nav" class="navbar navbar-expand-lg bg-dark pb-4 pt-4 top-0">
       <ul class="nav nav-pills" id="pills-tab" role="tablist">
          <li class="nav-item" role="presentation">
             <a class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
@@ -32,163 +32,181 @@
             <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Inicio</a>
          </li>
-         <li class="nav-item" role="presentation">
-            <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-               type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Carrito</a>
-         </li>
+         <li class="nav-item">
+            <a class="nav-link text-platzi" href="#" data-bs-toggle="modal" data-bs-target="#modalCompra">Carrito</a>
       </ul>
    </nav>
-   <!-- header -->
+   <!-- /header -->
+   <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+      Producto Añadido al carrito!
+   </div>
+   <div class="alert container position-sticky top-0 alert-primary remove" role="alert">
+      Producto removido!
+   </div>
 
-   <div class="tab-content" id="pills-tabContent">
-      <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">1
+   <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel"
+      aria-labelledby="pills-profile-tab">
+      <h2 class="h4 m-4 text-primary">Productos</h2>
+
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+         <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+               <h5 class="card-title pt-2 text-center text-primary">TV samsumg</h5>
+               <img src="assets/images/tv.3.jpg" class="card-img-top" alt="...">
+               <div class="card-body">
+                  <p class="card-text text-white-50 description">52 pulgadas ultra HD</p>
+                  <h5 class="text-primary">Precio: <span class="precio">$ 1000000</span></h5>
+                  <div class="d-grid gap-2">
+                     <button class="btn btn-primary button">Añadir a Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+               <h5 class="card-title pt-2 text-center text-primary">TV LG 32</h5>
+               <img src="assets/images/tv.4.jpg" class="card-img-top" alt="...">
+               <div class="card-body">
+                  <p class="card-text text-white-50 description">TV 49 smart TV</p>
+                  <h5 class="text-primary">Precio: <span class="precio">$ 800000</span></h5>
+                  <div class="d-grid gap-2">
+                     <button class="btn btn-primary button">Añadir a Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+               <h5 class="card-title pt-2 text-center text-primary">Freidora sogo</h5>
+               <img src="assets/images/freidora.2.jpg" class="card-img-top" alt="...">
+               <div class="card-body">
+                  <p class="card-text text-white-50 description">Freidora 12 lbs con acsesorios</p>
+                  <h5 class="text-primary">Precio: <span class="precio">$ 120000</span></h5>
+                  <div class="d-grid gap-2">
+                     <button class="btn btn-primary button">Añadir a Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+               <h5 class="card-title pt-2 text-center text-primary">Freidora phillips</h5>
+               <img src="assets/images/freidora1.jpg" class="card-img-top" alt="...">
+               <div class="card-body">
+                  <p class="card-text text-white-50 description">freidora 8 lbs</p>
+                  <h5 class="text-primary">Precio: <span class="precio">$ 80000</span></h5>
+                  <div class="d-grid gap-2">
+                     <button class="btn btn-primary button">Añadir a Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+               <h5 class="card-title pt-2 text-center text-primary">Nevera challenger</h5>
+               <img src="assets/images/nevera1.jpg" class="card-img-top" alt="...">
+               <div class="card-body">
+                  <p class="card-text text-white-50 description">Nevera de 33 lbs con vidrio para ver el contenido
+                  </p>
+                  <h5 class="text-primary">Precio: <span class="precio">$ 1800000</span></h5>
+                  <div class="d-grid gap-2">
+                     <button class="btn btn-primary button">Añadir a Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+               <h5 class="card-title pt-2 text-center text-primary">Nevera challenger</h5>
+               <img src="assets/images/nevera2.jpg" class="card-img-top" alt="...">
+               <div class="card-body">
+                  <p class="card-text text-white-50 description">Nevera sencilla con dispensador de agua</p>
+                  <h5 class="text-primary">Precio: <span class="precio">$ 1200000</span></h5>
+                  <div class="d-grid gap-2">
+                     <button class="btn btn-primary button">Añadir a Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+               <h5 class="card-title pt-2 text-center text-primary">Lavadora samsumg</h5>
+               <img src="assets/images/lavadora1.jpg" class="card-img-top" alt="...">
+               <div class="card-body">
+                  <p class="card-text text-white-50 description">Lavadora de 25 lbs con centrifugado</p>
+                  <h5 class="text-primary">Precio: <span class="precio">$ 900000</span></h5>
+                  <div class="d-grid gap-2">
+                     <button class="btn btn-primary button">Añadir a Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+               <h5 class="card-title pt-2 text-center text-primary">Lavadora haceb</h5>
+               <img src="assets/images/lavadora2.jpg" class="card-img-top" alt="...">
+               <div class="card-body">
+                  <p class="card-text text-white-50 description">Lavadora de 33lbs con secado termico</p>
+                  <h5 class="text-primary">Precio: <span class="precio">$ 1500000</span></h5>
+                  <div class="d-grid gap-2">
+                     <button class="btn btn-primary button">Añadir a Carrito</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
       </div>
 
-      <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel"
-         aria-labelledby="pills-profile-tab" tabindex="0">
-         <h2 class="h4 m-4 text-primary">Productos</h2>
+   </div>
+   <!-- modals -->
 
-         <section id="televisor" class="mt-3 mb-3">
-            <div class="row">
-               <div class="col-12 col-md-4 col-sm-6 col-lg-3  justify-content-center mb-2">
-                  <div id="fondo_card" class="card" style="width: 15rem;">
-                     <h5 id="nav_a" class="card-title text-center pt-1  ">TV sony</h5>
-                     <img src="assets/images/tv.4.jpg" class="card-img-top" alt="tv-1">
-                     <div class="card-body">
-                        <p id="lyrics" class="card-text text-white-50 small">tv 49 pulgadas uhd</p>
-                        <h5 id="lyrics_precio" class="card-text">precio: <span class="precio">600000</span></h5>
-                        <div class="d-grid gap-2">
-                           <button class="btn btn-primary button">Añadir al carrito</button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-12 col-md-4 col-sm-6 col-lg-3  justify-content-center mb-2">
-                  <div id="fondo_card" class="card" style="width: 15rem;">
-                     <h5 id="nav_a" class="card-title text-center pt-1  ">TV challenger</h5>
-                     <img src="assets/images/tv.3.jpg" class="card-img-top" alt="tv-1">
-                     <div class="card-body">
-                        <p id="lyrics" class="card-text text-white-50 small">tv 59 pulgadas uhd</p>
-                        <h5 id="lyrics_precio" class="card-text">precio: <span class="precio">900000</span></h5>
-                        <div class="d-grid gap-2">
-                           <button class="btn btn-primary button">Añadir al carrito</button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-12 col-md-4 col-sm-6 col-lg-3  justify-content-center mb-2">
-                  <div id="fondo_card" class="card" style="width: 15rem;">
-                     <h5 id="nav_a" class="card-title text-center pt-1  ">Freidora oster</h5>
-                     <img src="assets/images/freidora1.jpg" class="card-img-top" alt="tv-1">
-                     <div class="card-body">
-                        <p id="lyrics" class="card-text text-white-50 small">15 lbs, frita en minutos
-                        </p>
-                        <h5 id="lyrics_precio" class="card-text">precio: <span class="precio">120000</span></h5>
-                        <div class="d-grid gap-2">
-                           <button class="btn btn-primary button">Añadir al carrito</button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-12 col-md-4 col-sm-6 col-lg-3  justify-content-center mb-2">
-                  <div id="fondo_card" class="card" style="width: 15rem;">
-                     <h5 id="nav_a" class="card-title text-center pt-1  ">Freidora black and decker</h5>
-                     <img src="assets/images/freidora.2.jpg" class="card-img-top" alt="tv-1">
-                     <div class="card-body">
-                        <p id="lyrics" class="card-text text-white-50 small">6 lbs multiproposito</p>
-                        <h5 id="lyrics_precio" class="card-text">precio: <span class="precio">300000</span></h5>
-                        <div class="d-grid gap-2">
-                           <button class="btn btn-primary button">Añadir al carrito</button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+   <div class="modal fade" id="modalCompra" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content" id ="modal-carrito">
+            <div class="modal-header">
+               <h5 class="modal-title" id="staticBackdropLabel">Carrito</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-      </div>
-      <div class="row">
-         <div class="col-12 col-md-4 col-sm-6 col-lg-3  justify-content-center mb-2">
-            <div id="fondo_card" class="card" style="width: 15rem;">
-               <h5 id="nav_a" class="card-title text-center pt-1  ">lavadora lg</h5>
-               <img src="assets/images/lavadora1.jpg" class="card-img-top" alt="tv-1">
-               <div class="card-body">
-                  <p id="lyrics" class="card-text text-white-50 small">lavadora de 20lbs</p>
-                  <h5 id="lyrics_precio" class="card-text">precio: <span class="precio">800000</span></h5>
-                  <div class="d-grid gap-2">
-                     <button class="btn btn-primary button">Añadir al carrito</button>
+            <div class="modal-body" id ="modal-carrito">
+
+               <br>
+               <table class="table table-dark table-hover">
+                  <thead>
+                     <tr class="text-primary">
+                        <th scope="col">#</th>
+                        <th scope="col">Productos</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Cantidad</th>
+                     </tr>
+                  </thead>
+                  <tbody class="tbody">
+
+
+
+                  </tbody>
+               </table>
+               <br><br>
+               <div class="row mx-4">
+                  <div class="col">
+                     <h3 class="itemCartTotal text-white">Total: 0</h3>
+                  </div>
+                  <div class="col d-flex justify-content-end">
+                     <button class="btn btn-success">COMPRAR</button>
                   </div>
                </div>
+
             </div>
-         </div>
-         <div class="col-12 col-md-4 col-sm-6 col-lg-3  justify-content-center mb-2">
-            <div id="fondo_card" class="card" style="width: 15rem;">
-               <h5 id="nav_a" class="card-title text-center pt-1  ">lavadora haceb</h5>
-               <img src="assets/images/lavadora2.jpg" class="card-img-top" alt="tv-1">
-               <div class="card-body">
-                  <p id="lyrics" class="card-text text-white-50 small">lavadora 33 lbs con secadora</p>
-                  <h5 id="lyrics_precio" class="card-text">precio: <span class="precio">600000</span></h5>
-                  <div class="d-grid gap-2">
-                     <button class="btn btn-primary button">Añadir al carrito</button>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="col-12 col-md-4 col-sm-6 col-lg-3  justify-content-center mb-2">
-            <div id="fondo_card" class="card" style="width: 15rem;">
-               <h5 id="nav_a" class="card-title text-center pt-1  ">Nevera challeger</h5>
-               <img src="assets/images/nevera1.jpg" class="card-img-top" alt="tv-1">
-               <div class="card-body">
-                  <p id="lyrics" class="card-text text-white-50 small">capacidad de 30 lbs con dispensador de agua</p>
-                  <h5 id="lyrics_precio" class="card-text">precio: <span class="precio">1200000</span></h5>
-                  <div class="d-grid gap-2">
-                     <button class="btn btn-primary button">Añadir al carrito</button>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="col-12 col-md-4 col-sm-6 col-lg-3  justify-content-center mb-2">
-            <div id="fondo_card" class="card" style="width: 15rem;">
-               <h5 id="nav_a" class="card-title text-center pt-1  ">nevera lg</h5>
-               <img src="assets/images/nevera2.jpg" class="card-img-top" alt="tv-1">
-               <div class="card-body">
-                  <p id="lyrics" class="card-text text-white-50 small">nevera 33lbs con vista interna</p>
-                  <h5 id="lyrics_precio" class="card-text">precio: <span class="precio">700000</span></h5>
-                  <div class="d-grid gap-2">
-                     <button class="btn btn-primary button">Añadir al carrito</button>
-                  </div>
-               </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
             </div>
          </div>
       </div>
    </div>
-   </div>
-   <div class="tab-pane fade CARRITO " id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
-      tabindex="0">
-      <br>
-      <table class="table table table-dark table-hover col-12">
-         <thead>
-            <tr>
-               <th scope="col">#</th>
-               <th scope="col">Productos</th>
-               <th scope="col">Precio</th>
-               <th scope="col">Cantidad</th>
-            </tr>
-         </thead>
-         <tbody class="tbody">
+   <!-- /modals -->
 
-
-         </tbody>
-      </table>
-      <br><br>
-      <div class="row ms-4">
-         <div class="col">
-            <h3 class="itemCartTotal text-white">Total: 0</h3>
-         </div>
-         <div class="col d-flex justify-content-end">
-            <button class="btn btn-success">Comprar</button>
-         </div>
-      </div>
-   </div>
-   </section>
    <!-- /cards -->
    <!-- Footer -->
    <footer id="footer" class="pb-4 pt-4">
