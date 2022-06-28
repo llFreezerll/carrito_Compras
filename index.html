@@ -43,6 +43,17 @@
    <div class="alert container position-sticky top-0 alert-primary remove" role="alert">
       Producto removido!
    </div>
+   <div class="wrap">
+      <div class=" col-8 mb-2 offset-2 justify-content-center mt-4" >
+         <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <option selected>Seleccionar categoria</option>
+            <option value="1">Televisores</option>
+            <option value="2">Neveras</option>
+            <option value="3">Lavadoras</option>
+            <option value="3">Freidoras</option>
+          </select>
+      </div>
+   </div>
 
    <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel"
       aria-labelledby="pills-profile-tab">
@@ -51,9 +62,9 @@
       <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
 
          <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <div class="card shadow mb-1 bg-dark rounded" category= "televisores" style="width: 20rem;">
                <h5 class="card-title pt-2 text-center text-primary">TV samsumg</h5>
-               <img src="assets/images/tv.3.jpg" class="card-img-top" alt="...">
+               <img src ="assets/images/tv.3.jpg " id = "images" class="card-img-top" alt="...">
                <div class="card-body">
                   <p class="card-text text-white-50 description">52 pulgadas ultra HD</p>
                   <h5 class="text-primary">Precio: <span class="precio">$ 1000000</span></h5>
@@ -66,7 +77,7 @@
          <div class="col d-flex justify-content-center mb-4">
             <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
                <h5 class="card-title pt-2 text-center text-primary">TV LG 32</h5>
-               <img src="assets/images/tv.4.jpg" class="card-img-top" alt="...">
+               <img src="assets/images/tv.4.jpg" id = "images" class="card-img-top" alt="...">
                <div class="card-body">
                   <p class="card-text text-white-50 description">TV 49 smart TV</p>
                   <h5 class="text-primary">Precio: <span class="precio">$ 800000</span></h5>
@@ -79,7 +90,7 @@
          <div class="col d-flex justify-content-center mb-4">
             <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
                <h5 class="card-title pt-2 text-center text-primary">Freidora sogo</h5>
-               <img src="assets/images/freidora.2.jpg" class="card-img-top" alt="...">
+               <img src="assets/images/freidora.2.jpg" id = "images" class="card-img-top" alt="...">
                <div class="card-body">
                   <p class="card-text text-white-50 description">Freidora 12 lbs con acsesorios</p>
                   <h5 class="text-primary">Precio: <span class="precio">$ 120000</span></h5>
@@ -92,7 +103,7 @@
          <div class="col d-flex justify-content-center mb-4">
             <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
                <h5 class="card-title pt-2 text-center text-primary">Freidora phillips</h5>
-               <img src="assets/images/freidora1.jpg" class="card-img-top" alt="...">
+               <img src="assets/images/freidora1.jpg" id = "images" class="card-img-top" alt="...">
                <div class="card-body">
                   <p class="card-text text-white-50 description">freidora 8 lbs</p>
                   <h5 class="text-primary">Precio: <span class="precio">$ 80000</span></h5>
@@ -105,7 +116,7 @@
          <div class="col d-flex justify-content-center mb-4">
             <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
                <h5 class="card-title pt-2 text-center text-primary">Nevera challenger</h5>
-               <img src="assets/images/nevera1.jpg" class="card-img-top" alt="...">
+               <img src="assets/images/nevera1.jpg" id = "images" class="card-img-top" alt="...">
                <div class="card-body">
                   <p class="card-text text-white-50 description">Nevera de 33 lbs con vidrio para ver el contenido
                   </p>
@@ -119,7 +130,7 @@
          <div class="col d-flex justify-content-center mb-4">
             <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
                <h5 class="card-title pt-2 text-center text-primary">Nevera challenger</h5>
-               <img src="assets/images/nevera2.jpg" class="card-img-top" alt="...">
+               <img src="assets/images/nevera2.jpg" id = "images" class="card-img-top" alt="...">
                <div class="card-body">
                   <p class="card-text text-white-50 description">Nevera sencilla con dispensador de agua</p>
                   <h5 class="text-primary">Precio: <span class="precio">$ 1200000</span></h5>
@@ -132,7 +143,7 @@
          <div class="col d-flex justify-content-center mb-4">
             <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
                <h5 class="card-title pt-2 text-center text-primary">Lavadora samsumg</h5>
-               <img src="assets/images/lavadora1.jpg" class="card-img-top" alt="...">
+               <img src="assets/images/lavadora1.jpg" id = "images" class="card-img-top" alt="...">
                <div class="card-body">
                   <p class="card-text text-white-50 description">Lavadora de 25 lbs con centrifugado</p>
                   <h5 class="text-primary">Precio: <span class="precio">$ 900000</span></h5>
@@ -145,7 +156,7 @@
          <div class="col d-flex justify-content-center mb-4">
             <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
                <h5 class="card-title pt-2 text-center text-primary">Lavadora haceb</h5>
-               <img src="assets/images/lavadora2.jpg" class="card-img-top" alt="...">
+               <img src="assets/images/lavadora2.jpg" id = "images" class="card-img-top" alt="...">
                <div class="card-body">
                   <p class="card-text text-white-50 description">Lavadora de 33lbs con secado termico</p>
                   <h5 class="text-primary">Precio: <span class="precio">$ 1500000</span></h5>
@@ -160,6 +171,7 @@
       </div>
 
    </div>
+   
    <!-- modals -->
 
    <div class="modal fade" id="modalCompra" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -200,7 +212,7 @@
 
             </div>
             <div class="modal-footer">
-               <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
             </div>
          </div>
       </div>
